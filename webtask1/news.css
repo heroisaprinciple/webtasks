@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap");
+
+* {
+  font-family: 'Lora', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+.bgimg {
+  margin: 30px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/rolex-and-tennis-roger-federer-share_wim21jb_02734.jpeg");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap");
+
+* {
+    font-family: 'Lora', sans-serif;
+    color: black;
+}
+
+nav.navigation-bar {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 93%;
+}
+
+div.logo {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+}
+
+div.logo img {
+    height: 30px;
+    width: 30px;
+    vertical-align: auto;
+}
+
+nav.navigation-bar a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .droplink {background-color: #3e8e41;}
+
+.balle img {
+  position: absolute;
+  animation: balle 1.5s linear infinite;
+}
+
+@keyframes balle {
+  0% {
+      transform: translate(-50%, -50%) translateY(-50px) rotate(0deg);
+  }
+  50% {
+      transform: translate(-50%, -50%) translateY(0px) rotate(180deg);
+  }
+  100% {
+      transform: translate(-50%, -50%) translateY(-50px) rotate(360deg);
+  }
+}
+
+main {
+  text-align: -webkit-center;
+}
+
+h1 {
+  margin: 50px;
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+}
+
+h1 span {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+/* message */
+
+.message {
+  background-color: burlywood;
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 270px;
+  animation: openclose 5s ease-in-out infinite; /* slow in the beginning, but abrupt in the end */
+}
+
+.word1, .word2, .word3 {
+  font-weight: bold;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+/* colour */
+.title {
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+div.paragraph {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-items: flex-start;
+  text-align: justify;
+}
+
+div.contacts {
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* menu */
+.navigation-bar li:hover {
+  background-color: red;
+  transition: background-color 1000ms linear;
+}
