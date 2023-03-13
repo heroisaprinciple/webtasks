@@ -7,47 +7,36 @@
 }
 
 .bgimg {
-  margin: 30px;
-  height: 500px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("img/rolex-and-tennis-roger-federer-share_wim21jb_02734.jpeg");
+    margin-top: 30px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url("img/fder.png");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap");
-
-* {
-    font-family: 'Lora', sans-serif;
-    color: black;
-}
-    
-nav.navigation-bar {
+.navigation-bar {
     padding: 20px;
     position: fixed;
     top: 0;
     width: 93%;
 }
 
-div.logo {
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    right: 0;
-}
-
-div.logo img {
+.logo img {
     height: 30px;
     width: 30px;
     vertical-align: auto;
 }
 
-nav.navigation-bar a{
+.navigation-bar a{
     padding: 10px;
     text-decoration: none;
 }
 
 .dropdown {
-  position: relative; 
+  position: relative;
   display: inline-block;
 }
 
@@ -66,11 +55,11 @@ nav.navigation-bar a{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #F5F0BB; transition: background-color 1000ms linear;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .droplink {background-color: #3e8e41;}
+.dropdown:hover .droplink {background-color: #90C8AC;}
 
 .balle img {
   position: absolute;
@@ -79,18 +68,18 @@ nav.navigation-bar a{
 
 @keyframes balle {
   0% {
-      transform: translate(-50%, -50%) translateY(-50px) rotate(0deg);
+      transform: translate(-50%, -50%) translateY(-25px) rotate(0deg);
   }
   50% {
       transform: translate(-50%, -50%) translateY(0px) rotate(180deg);
   }
   100% {
-      transform: translate(-50%, -50%) translateY(-50px) rotate(360deg);
+      transform: translate(-50%, -50%) translateY(-25px) rotate(360deg);
   }
 }
 
 main {
-  text-align: -webkit-center;
+  text-align: center;
 }
 
 h1 {
@@ -112,90 +101,6 @@ h1 {
 h1 span {
   font-size: 40px;
   margin-left: 40px;
-}
-
-/* message */
-
-.message {
-  background-color: burlywood;
-  color: #333;
-  display: block;
-  font-weight: 900;
-  overflow: hidden;
-  position: absolute;
-  padding-left: 0.5rem;
-  top: 0.2rem;
-  left: 270px;
-  animation: openclose 5s ease-in-out infinite; /* slow in the beginning, but abrupt in the end */
-}
-
-.word1, .word2, .word3 {
-  font-weight: bold;
-}
-
-@keyframes openclose {
-  0% {
-    top: 0.2rem;
-    width: 0;
-  }
-  5% {
-    width: 0;
-  }
-  15% {
-    width: 230px;
-  }
-  30% {
-    top: 0.2rem;
-    width: 230px;
-  }
-  33% {
-    top: 0.2rem;
-    width: 0;
-  }
-  35% {
-    top: 0.2rem;
-    width: 0;
-  }
-  38% {
-    top: -4.5rem;
-    
-  }
-  48% {
-    top: -4.5rem;
-    width: 190px;
-  }
-  62% {
-    top: -4.5rem;
-    width: 190px;
-  }
-  66% {
-    top: -4.5rem;
-    width: 0;
-    text-indent: 0;
-  }
-  71% {
-    top: -9rem;
-    width: 0;
-    text-indent: 5px;
-  }
-  86% {
-    top: -9rem;
-    width: 285px;
-  }
-  95% {
-    top: -9rem;
-    width: 285px;
-  }
-  98% {
-    top: -9rem;
-    width: 0;
-    text-indent: 5px;
-  }
-  100% {
-    top: 0;
-    width: 0;
-    text-indent: 0;
-  }
 }
 
 /* colour */
@@ -262,17 +167,7 @@ div.contacts {
 
 /* menu */
 
-.navigation-bar a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  display: block;
-  transition: all 0.3s ease;
-  bottom: 25%;
-}
-.navigation-bar a:hover::after {
-  width: 100%;
-  height: 1px;
-  background-color: red;
+.navigation-bar li:hover {
+  background-color: #C4DFAA;
+  transition: background-color 1000ms linear;
 }
