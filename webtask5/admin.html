@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roger Federer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link href="news.html">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation-bar navbar navbar-expand-sm navbar-white bg-white fixed-top w-100 d-flex justify-content-between">
+            <div class="container">
+                <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                        <div class="dropdown nav-item">
+                            <a href="#matches" class="droplink nav-link">Matches</a>
+                            <div class="dropdown-content">
+                                <a href="#">Match 1</a>
+                                <a href="#">Match 2</a>
+                                <a href="#">Match 3</a>
+                            </div>
+                        </div>
+
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#fans">Fans</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="logo balle w-10 align-bottom">
+                    <img src="img/3439689.png">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-10 h-90 text-center">
+        <div class="paragraph font-weight-bold text-center">
+        </div>
+
+        <ul id="allNews" class="list-group mb-3"></ul>
+        <div class="parallax">
+          <div class = "form-block">
+            <form>
+              <h2 class="text-white border">Add news</h2>
+              <div class="form-group mt-4">
+                <label for="exampleInputEmail1" class="text-light">News Headline:</label>
+                <input type="text" class="form-control" id="headline" aria-describedby="emailHelp" placeholder="News Headline">
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="exampleFormControlTextarea1" class="text-light">News:</label>
+                <textarea class="form-control" id="news" rows="3"></textarea>
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="exampleFormControlFile1" class="text-light">Add image</label>
+                <input type="file" class="form-control-file" id="file" accept="image/png, image/jpeg">
+                <img id="frame" src="" width="100px" height="70px" style="display: none"/>
+              </div>
+              <button type="button" class="mt-2 btn btn-outline-success" id="form-button" onclick="addNews()">Submit</button>
+            </form>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <p>Roger's site:</p>
+            <p><a href="https://www.rogerfederer.com/">Roger's official website</a></p>
+
+            <p>Author's github</p>
+            <p><a href="https://github.com/heroisaprinciple">heroisaprinciple</a></p>
+        </div>
+
+    </footer>
+</body>
+<script src="admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
