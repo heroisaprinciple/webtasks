@@ -7,7 +7,6 @@ localStorage.setItem('fans', '');
 addEventListener("online", (e) => {
   // objs are divided by ;
   for (const message of localStorage.fans.split(';')) {
-    // from str to obj
     const msg = JSON.parse(message);
     sendMessageToServer(msg.username, msg.comment, msg.time);
   }
